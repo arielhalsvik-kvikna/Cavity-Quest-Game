@@ -1,0 +1,26 @@
+﻿# .gitignore for CavityQuest (.NET/Blazor project)
+
+# Build results
+bin/
+obj/
+
+# Rider project files
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Others
+wwwroot/lib/
+
