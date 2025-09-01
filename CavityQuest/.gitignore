@@ -21,6 +21,16 @@ Thumbs.db
 # Logs
 *.log
 
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
 # Others
 wwwroot/lib/
 

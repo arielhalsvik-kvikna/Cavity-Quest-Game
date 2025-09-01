@@ -1,0 +1,22 @@
+﻿@page "/game"
+
+<canvas id="game-canvas" width="800" height="450" style="border:1px solid #333; background:#f0f0f0; display:block; margin:auto;"></canvas>
+<audio id="bg-music" src="/music/music-short-version.m4a" preload="auto" style="display:none" @ref="bgMusicRef"></audio>
+
+@code {
+    private ElementReference gameCanvas;
+    private ElementReference bgMusicRef;
+    private bool initialized;
+
+    [Inject] IJSRuntime JS { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !initialized)
+        {
+            initialized = true;
+            await JS.InvokeVoidAsync("cavityQuestGame.start", gameCanvas);
+            await JS.InvokeVoidAsync("cavityQuestGame.initMusic", bgMusicRef);
+        }
+    }
+}
