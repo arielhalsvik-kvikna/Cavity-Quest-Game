@@ -1,3 +1,5 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9939715f-e719-4a7e-be86-f952744d8a7f" />
+
 ## How to install and setup
 1. Download the repository as a ZIP file and extract it to your desired location.
 2. Locate and open CavityQuest.csproj in Rider or your preferred IDE.
